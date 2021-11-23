@@ -1,43 +1,55 @@
 # Introduction 
-Se realiza solucion para el reto de automatización propuesto por QVision
+Se realiza solucion para el reto de automatización propuesto por Tata
 
-Reto técnico de automatización.
+## Reto técnico de automatización.
 Stack Tecnológico
 •	Screenplay
 •	Gradle
 •	Cucumber BDD
 •	Serenity BDD
 
-Carolina es la jefe de ventas en la agencia de viajes DX Hotels: https://js.devexpress.com/Demos/DXHotels/#home y como parte de las tareas que tiene que hacer, está el de verificar las tarifas cobradas a los clientes; de manera que ella hace  una búsqueda de los hoteles con la tarifa más económica en los diferentes destinos ofrecidos y valida que el precio total sea correcto. El problema es que Carolina maneja muchos clientes a nivel nacional de manera que requiere de un analista de automatización que le ayude a validar esta información antes de sacar los planes a PDN.
-Cree un robot que permita seleccionar el hotel con la tarifa más económica para cada uno de los destinos ofrecidos y que valide que el precio total a pagar (TOTAL TO PAY NOW) sea el correspondiente con la siguiente fórmula: No días x Tarifa día.
+### Requerimiento funcional
+######Product-Owner requerimiento: 
+Quiero realizar las pruebas de regresión de forma
+automatizada del portal https://www.demoblaze.com/ a través del Browser Chrome 
+con el respectivo informe de evidencias y ruta crítica planteada, implementando
+métodos y herramientas de automatización para agilizar y garantizar el correcto
+funcionamiento del aplicativo.
 
-Tenga en cuenta que el robot debe tener la lógica que permita seleccionar el hotel con la tarifa más baja y no porque se le indique explícitamente cuál seleccionar.
-Nota: El presente ejercicio sólo contempla los resultados de la primera página de resultados, si lo desea puede implementar la lógica que permita navegar por los controles de paginación cuando se muestran los resultados. Se tiene en cuenta como un plus.
- 
-Los datos de Location, Check In, CheckOut y valor total esperado deben ser enviados desde el feature.
+### Escenarios para la prueba
+Se deben diseñar y automatizar mínimo 4 escenarios de las pruebas de regresión
+de las siguientes funcionalidades: registro de usuario, login de usuario, registro de
+formulario de contacto y adición del producto MacBook Pro de la sección de
+Laptops 
 
+### Herramientas para el desarrollo de la aplicacion y complementos
 
-Para la evaluación se tendrán en cuenta:
-•	Buenas prácticas de desarrollo.
-•	Correcta implementación del patrón de diseño.
-•	Correcto uso de los selectores HTML.
-•	Enviar el comando de gradle para ejecutar la automatización desde la línea de comandos.
-•	Que se dé solución al problema propuesto en el enunciado
-•	Generación del reporte de resultados de Serenity
+ Java
+ Selenium
+ Cucumber
+ Gerkhin
+ ScreenPlay
+ Serenity-BDD
+ Principios SOLID
+ Programación orientada a objetos
+ Gradle
+ El mapeo de objetos de deberá realizar a través de la función de xpath. 
+
 
 # Ejecución del Proyecto
 
-1. Realice la clocacion del proyecto desde la siguiente pagina:
+1. Clonar el proyecto de la ruta 
 
-https://github.com/desarrollojesusdorado/RetoAutomatizacionQVision
+https://github.com/paradox-t1m3/RetoTata
 
 2. Luego de clonado importelo en un IDE preferiblemente Intellij
 
-3. Configurar data en el feature, las fechas enviadas deben ser a partir de fecha actual con la estructura mes/dia/año
+3. Configurar data en el feature, para el escenario de RegistroDeUsuario ingresar un usuario nuevo en la pagina. Es opcional si desea ingresar el mismo 
+usuario para el escenario de Login despues de registrarlo, pero este escenario ya cuenta con un suario existente para el caso de prueba.
 
-4. Para realizar la ejecucion del proyecto debe entrar a la raiz del proyecto y desde el cmd ejecutar el comando
+4. Para ejecutar el proyecto se debe configurar un JUnit con la direccion del runner a ejecutar, version de jdk java 1.8 preferiblemente y con JavaManifest.
 
-gradle  clean test --tests *VerificarTarifasDxHotels* aggregate --info
+5. Para obtener reporte de evidencias de serenity ejecute el siguiente comando desde la terminal gradle clean test aggregate
 
 5. Para consultar el reporte de evidencias de serenity ejecute el index.html ubicado en la ruta del proyecto target\site\serenity
 

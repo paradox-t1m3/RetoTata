@@ -8,7 +8,6 @@ import static co.com.tata.demoblaze.util.Constantes.*;
 
 public class VerificarRegistroDeUsuarioExitoso implements Question<Boolean> {
 
-
     public static VerificarRegistroDeUsuarioExitoso enMensajeEmergente() {
         return new VerificarRegistroDeUsuarioExitoso();
     }
@@ -18,7 +17,7 @@ public class VerificarRegistroDeUsuarioExitoso implements Question<Boolean> {
 
         String respuestaMensajeRegistro = actor.recall(RESPUESTA_USUARIO_REGISTRADO);
 
-        Boolean respuesta = false;
+        boolean respuesta = false;
 
         if (respuestaMensajeRegistro.trim().equals(MENSAJE_USUARIO_REGISTRADOS_EXITOSAMENTE)) {
             respuesta = true;

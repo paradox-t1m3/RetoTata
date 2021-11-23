@@ -18,7 +18,7 @@ Característica: Realizar registro de datos y adicion de productos en demoblaze
     Entonces se muestra el mensaje Sign up successful
     Ejemplos:
       | usuarioRegistro | claveRegistro |
-      | prueba5usuario  | 1234          |
+      | prueba6usuario  | 1234          |
 
   @RutaCritica
   @Login
@@ -42,7 +42,6 @@ Característica: Realizar registro de datos y adicion de productos en demoblaze
     Ejemplos:
       | emailContacto      | nombreContacto | mensaje            |
       | prueba@hotmail.com | cristian       | prueba de contacto |
-
 
   @AdicionDeProducto
   Esquema del escenario:Realizar adicion de producto
