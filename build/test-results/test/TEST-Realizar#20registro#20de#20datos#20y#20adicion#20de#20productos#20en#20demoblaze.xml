@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Realizar registro de datos y adicion de productos en demoblaze" tests="4" skipped="0" failures="2" errors="0" timestamp="2021-11-23T05:19:02" hostname="CVILLEGAS" time="64.594">
+<testsuite name="Realizar registro de datos y adicion de productos en demoblaze" tests="4" skipped="0" failures="3" errors="0" timestamp="2021-11-23T18:48:47" hostname="CVILLEGAS" time="68.557">
   <properties/>
-  <testcase name="Realizar registro de usuario" classname="Realizar registro de datos y adicion de productos en demoblaze" time="13.915"/>
-  <testcase name="Realizar inicio de sesion" classname="Realizar registro de datos y adicion de productos en demoblaze" time="10.895"/>
-  <testcase name="Realizar registro de formulario de contacto" classname="Realizar registro de datos y adicion de productos en demoblaze" time="12.584">
-    <failure message="org.openqa.selenium.NoAlertPresentException: no such alert&#10;  (Session info: chrome=96.0.4664.45)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 659765e81f1a624ae50d291416186c3f" type="org.openqa.selenium.NoAlertPresentException">org.openqa.selenium.NoAlertPresentException: no such alert
+  <testcase name="Realizar registro de usuario" classname="Realizar registro de datos y adicion de productos en demoblaze" time="16.293">
+    <failure message="java.lang.AssertionError: ============================================================ERROR: El usuario a registrar ya existe o es incorrecto" type="java.lang.AssertionError">java.lang.AssertionError: ============================================================ERROR: El usuario a registrar ya existe o es incorrecto
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.tata.demoblaze.stepdefinitions.DemoblazeStepdefinitions.seMuestraElMensajeSignUpSuccessful(DemoblazeStepdefinitions.java:47)
+	at ✽.se muestra el mensaje Sign up successful(src/test/resources/features/demoblaze.feature:18)
+</failure>
+  </testcase>
+  <testcase name="Realizar inicio de sesion" classname="Realizar registro de datos y adicion de productos en demoblaze" time="11.028"/>
+  <testcase name="Realizar registro de formulario de contacto" classname="Realizar registro de datos y adicion de productos en demoblaze" time="13.861">
+    <failure message="org.openqa.selenium.NoAlertPresentException: no such alert&#10;  (Session info: chrome=96.0.4664.45)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 32f7e813bf4316ddc3510cedea4cf17f" type="org.openqa.selenium.NoAlertPresentException">org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 659765e81f1a624ae50d291416186c3f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f7e813bf4316ddc3510cedea4cf17f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -24,7 +32,7 @@ Session ID: 659765e81f1a624ae50d291416186c3f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
 	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto.performAs(LlenarFormularioContacto.java:45)
-	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$HsNIAUIV.performAs$accessor$NYDj0ilg(Unknown Source)
+	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$jHXJ0twN.performAs$accessor$Y8TfDIgQ(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -35,7 +43,7 @@ Session ID: 659765e81f1a624ae50d291416186c3f
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$HsNIAUIV.performAs(Unknown Source)
+	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$jHXJ0twN.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
@@ -43,14 +51,14 @@ Session ID: 659765e81f1a624ae50d291416186c3f
 	at ✽.ingresa los datos del formulario(src/test/resources/features/demoblaze.feature:38)
 </failure>
   </testcase>
-  <testcase name="Realizar adicion de producto" classname="Realizar registro de datos y adicion de productos en demoblaze" time="27.145">
-    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;page-link&quot; id=&quot;next2&quot; value=&quot;9&quot;&gt;...&lt;/button&gt; is not clickable at point (1158, 546). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=96.0.4664.45)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a7b3c85d968621d93927ecd529e5a2f0" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;page-link&quot; id=&quot;next2&quot; value=&quot;9&quot;&gt;...&lt;/button&gt; is not clickable at point (1158, 546). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  <testcase name="Realizar adicion de producto" classname="Realizar registro de datos y adicion de productos en demoblaze" time="27.3">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;page-link&quot; id=&quot;next2&quot; value=&quot;9&quot;&gt;...&lt;/button&gt; is not clickable at point (1158, 546). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=96.0.4664.45)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e7b110ead1377d24f8403967511d4f54" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;page-link&quot; id=&quot;next2&quot; value=&quot;9&quot;&gt;...&lt;/button&gt; is not clickable at point (1158, 546). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a7b3c85d968621d93927ecd529e5a2f0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7b110ead1377d24f8403967511d4f54
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,7 +73,7 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1231)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$JlLAf30m.performAs$accessor$0RHEIBNF(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RUErMPsH.performAs$accessor$W4et7cgb(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,12 +84,12 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$JlLAf30m.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RUErMPsH.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.tata.demoblaze.tasks.SeleccionarProducto.performAs(SeleccionarProducto.java:44)
-	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$CTtxjeDu.performAs$accessor$OanuJHVb(Unknown Source)
+	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$VZ6c3bqj.performAs$accessor$Cz2k1zXa(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,116 +100,109 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$CTtxjeDu.performAs(Unknown Source)
+	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$VZ6c3bqj.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.tata.demoblaze.stepdefinitions.DemoblazeStepdefinitions.seleccionaElProducto(DemoblazeStepdefinitions.java:92)
-	at ✽.selecciona el producto(src/test/resources/features/demoblaze.feature:53)
+	at ✽.selecciona el producto(src/test/resources/features/demoblaze.feature:52)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@b0354f0
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@22b400e5
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@34297062
-nov. 23, 2021 12:19:03 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5f1f663
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@64dc9844
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2f559f6b
+nov. 23, 2021 1:48:47 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 48008
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 38552
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov. 23, 2021 12:19:06 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+nov. 23, 2021 1:48:51 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3033b21b
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@237491a5
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@43d94f
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a7a8b70
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@37a3586c
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3507ef55
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@594b9b43
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27c15355
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@35f16a7f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@68de9ccb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@43cefac4
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@b332e1d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@22523ca4
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7eff075e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45a7dbbb
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@57af5422
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a8038dd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4614dfc
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
-| usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
-| usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
-| usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]]
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]]]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Realizar registro de usuario
-----------------------------------------------------------------------------
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7ec0fa2
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@59b15b66
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1a3199af
-nov. 23, 2021 12:19:16 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+TEST FAILED: Realizar registro de usuario
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then verificar registro de usuario exitoso
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ============================================================ERROR: El usuario a registrar ya existe o es incorrecto
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@659718eb
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@d923a6c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2f4371
+nov. 23, 2021 1:49:03 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 26309
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 45358
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov. 23, 2021 12:19:18 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+nov. 23, 2021 1:49:05 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@fea13d0
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@15521faa
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3601bf6c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@178eee71
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@74890b3f
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27e0e37
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5cd9676b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3fbc9c55
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2d8716a9
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2d56b0d3
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2cd36338
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4fe9b09a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2459529d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6bb32f6
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]]]
@@ -211,8 +212,8 @@ INFO: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@54823d79
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b3ea991
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@87eb95e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1b3f7b42
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]]
@@ -225,14 +226,14 @@ INFO: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]]]
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -245,58 +246,58 @@ INFO: Detected dialect: W3C
 
 TEST PASSED: Realizar inicio de sesion
 ----------------------------------------------------------------------------
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1bfe1cbf
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7ab4dbff
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@65cd8e71
-nov. 23, 2021 12:19:27 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5432cf1d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@30dfaf95
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7843f5ff
+nov. 23, 2021 1:49:14 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 18496
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 35971
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov. 23, 2021 12:19:29 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+nov. 23, 2021 1:49:16 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5fcb2c57
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4aa4ccd2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@37b1a34e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@55d22d08
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f4bdc83
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2091869f
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@38881347
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3a9a66b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@55a75f79
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7d8233e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ccfb516
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@54278b30
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto, Cristian enters 'cristian' then hits [ENTER] into Nombre del contacto]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7598f6da
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@290cc257
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto, Cristian enters 'cristian' then hits [ENTER] into Nombre del contacto, Cristian enters 'prueba de contacto' then hits [ENTER] into Mensaje para el contacto]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@ea6e51d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5e8a3a8f
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto, Cristian enters 'cristian' then hits [ENTER] into Nombre del contacto, Cristian enters 'prueba de contacto' then hits [ENTER] into Mensaje para el contacto, Cristian clicks on Boton inicio de sesion]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45b64c0b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78204040
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto, Cristian enters 'cristian' then hits [ENTER] into Nombre del contacto, Cristian enters 'prueba de contacto' then hits [ENTER] into Mensaje para el contacto, Cristian clicks on Boton inicio de sesion]], Entonces se muestra el mensaje Thanks for the message!!]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]], Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
 | prueba@hotmail.com | cristian | prueba de contacto | [Cristian llenar formulario contacto [Cristian enters 'prueba@hotmail.com' then hits [ENTER] into Email del contacto, Cristian enters 'cristian' then hits [ENTER] into Nombre del contacto, Cristian enters 'prueba de contacto' then hits [ENTER] into Mensaje para el contacto, Cristian clicks on Boton inicio de sesion]], Entonces se muestra el mensaje Thanks for the message!!]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]], Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
@@ -313,47 +314,47 @@ TEST FAILED WITH ERROR: Realizar registro de formulario de contacto
 ---------------------------------------------------------------------
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Cristian llenar formulario contacto
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - no such alert
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2ada0e89
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@680ada63
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5788825c
-nov. 23, 2021 12:19:40 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@68db68e0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1efd97cf
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@b624264
+nov. 23, 2021 1:49:28 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 11864
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 37266
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov. 23, 2021 12:19:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+nov. 23, 2021 1:49:29 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@da8fc18
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5491a8b4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6affcea5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b2d0c7a
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al home [Cristian ingresar a home]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al home [Cristian ingresar a home]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@45a0f59c
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4d1df7bd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d923b85
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@25e34563
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al home [Cristian ingresar a home], Cuando selecciona una categoria de producto
 | categoria |
 | Laptops | [Cristian ingresar acontacto]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al home [Cristian ingresar a home], Cuando selecciona una categoria de producto
 | categoria |
 | Laptops | [Cristian ingresar acontacto]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3deb6a44
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7961bc37
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@251a0715
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@61bfbdd
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@645897ec
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@fc09d49
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@622c3c39
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1e4f0e3
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3ad37a46
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7cfe0fd8
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Realizar adicion de producto:Example: {categoria=Laptops, producto=MacBook Pro} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al home [Cristian ingresar a home], Cuando selecciona una categoria de producto
 | categoria |
 | Laptops | [Cristian ingresar acontacto], Y selecciona el producto
 | producto |
 | MacBook Pro | [Cristian seleccionar producto [Cristian clicks on laptops]]], Y adiciona el producto, Entonces se muestra el mensaje Product added
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]], Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |
@@ -362,9 +363,9 @@ INFO: Detected dialect: W3C
 | Laptops | [Cristian ingresar acontacto], Y selecciona el producto
 | producto |
 | MacBook Pro | [Cristian seleccionar producto [Cristian clicks on laptops]]], Y adiciona el producto, Entonces se muestra el mensaje Product added]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba5usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Realizar registro de usuario:Example: {usuarioRegistro=prueba6usuario, claveRegistro=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de usuario [Cristian ingresar al registro de usuario], Cuando ingresa los datos de registro
 | usuarioRegistro | claveRegistro |
-| prueba5usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba5usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
+| prueba6usuario | 1234 | [Cristian registrar usuario [Cristian enters 'prueba6usuario' then hits [ENTER] into Nombre de usuario de registro, Cristian enters '1234' then hits [ENTER] into Clave de registro, Cristian clicks on Boton registrar]], Entonces se muestra el mensaje Sign up successful [Then verificar registro de usuario exitoso]], Realizar inicio de sesion:Example: {usuario=cvillegas, clave=1234} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al inicio de sesion [Cristian ingresar ainicio de sesion], Cuando ingresa sus credenciales
 | usuario | clave |
 | cvillegas | 1234 | [Cristian iniciar sesion [Cristian enters 'cvillegas' then hits [ENTER] into Nombre de usuario, Cristian enters '1234' then hits [ENTER] into Clave, Cristian clicks on Boton inicio de sesion]], Entonces Inicia sesion en la pagina [Then verificar inicio de sesion]], Realizar registro de formulario de contacto:Example: {emailContacto=prueba@hotmail.com, nombreContacto=cristian, mensaje=prueba de contacto} [Dado que Cristian ingresa a la pagina de demoblaze [Cristian abrir navegador [Cristian opens the Home page]], Dado que Cristian ingresa al registro de fomulario de contacto [Cristian ingresar acontacto], Cuando ingresa los datos del formulario
 | emailContacto | nombreContacto | mensaje |

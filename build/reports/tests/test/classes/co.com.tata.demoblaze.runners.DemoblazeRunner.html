@@ -85,23 +85,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@37abb650
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@2fc3a201
 
 ?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/demoblaze.feature:21 ?[0m# Realizar registro de usuario
 ?[31msrc/test/resources/features/demoblaze.feature:44 ?[0m# Realizar registro de formulario de contacto
-?[31msrc/test/resources/features/demoblaze.feature:60 ?[0m# Realizar adicion de producto
+?[31msrc/test/resources/features/demoblaze.feature:59 ?[0m# Realizar adicion de producto
 
-4 Scenarios (?[31m2 failed?[0m, ?[32m2 passed?[0m)
-18 Steps (?[31m2 failed?[0m, ?[36m3 skipped?[0m, ?[32m13 passed?[0m)
-1m4,899s
+4 Scenarios (?[31m3 failed?[0m, ?[32m1 passed?[0m)
+18 Steps (?[31m3 failed?[0m, ?[36m3 skipped?[0m, ?[32m12 passed?[0m)
+1m8,917s
+
+java.lang.AssertionError: ============================================================ERROR: El usuario a registrar ya existe o es incorrecto
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.tata.demoblaze.stepdefinitions.DemoblazeStepdefinitions.seMuestraElMensajeSignUpSuccessful(DemoblazeStepdefinitions.java:47)
+	at ?.se muestra el mensaje Sign up successful(src/test/resources/features/demoblaze.feature:18)
 
 org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 659765e81f1a624ae50d291416186c3f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f7e813bf4316ddc3510cedea4cf17f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,7 +123,7 @@ Session ID: 659765e81f1a624ae50d291416186c3f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
 	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto.performAs(LlenarFormularioContacto.java:45)
-	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$HsNIAUIV.performAs$accessor$NYDj0ilg(Unknown Source)
+	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$jHXJ0twN.performAs$accessor$Y8TfDIgQ(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,7 +134,7 @@ Session ID: 659765e81f1a624ae50d291416186c3f
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$HsNIAUIV.performAs(Unknown Source)
+	at co.com.tata.demoblaze.tasks.LlenarFormularioContacto$ByteBuddy$jHXJ0twN.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
@@ -138,8 +146,8 @@ org.openqa.selenium.ElementClickInterceptedException: element click intercepted:
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CVILLEGAS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a7b3c85d968621d93927ecd529e5a2f0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\CVILLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e7b110ead1377d24f8403967511d4f54
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -154,7 +162,7 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1231)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$JlLAf30m.performAs$accessor$0RHEIBNF(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RUErMPsH.performAs$accessor$W4et7cgb(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,12 +173,12 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$JlLAf30m.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$RUErMPsH.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.tata.demoblaze.tasks.SeleccionarProducto.performAs(SeleccionarProducto.java:44)
-	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$CTtxjeDu.performAs$accessor$OanuJHVb(Unknown Source)
+	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$VZ6c3bqj.performAs$accessor$Cz2k1zXa(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,12 +189,12 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$CTtxjeDu.performAs(Unknown Source)
+	at co.com.tata.demoblaze.tasks.SeleccionarProducto$ByteBuddy$VZ6c3bqj.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.tata.demoblaze.stepdefinitions.DemoblazeStepdefinitions.seleccionaElProducto(DemoblazeStepdefinitions.java:92)
-	at ?.selecciona el producto(src/test/resources/features/demoblaze.feature:53)
+	at ?.selecciona el producto(src/test/resources/features/demoblaze.feature:52)
 
 </pre>
 </span>
@@ -223,7 +231,7 @@ Session ID: a7b3c85d968621d93927ecd529e5a2f0
 
 TEST STARTED: Realizar registro de usuario
 -------------------------------------------------------------------(realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-registro-de-usuario)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@23132efc
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@78452572
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Realizar inicio de sesion/realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-inicio-de-sesion
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
@@ -235,7 +243,7 @@ TEST STARTED: Realizar registro de usuario
 
 TEST STARTED: Realizar inicio de sesion
 -------------------------------------------------------------------(realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-inicio-de-sesion)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f2dbc4f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5cae445e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Realizar registro de formulario de contacto/realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-registro-de-formulario-de-contacto
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
@@ -247,7 +255,7 @@ TEST STARTED: Realizar inicio de sesion
 
 TEST STARTED: Realizar registro de formulario de contacto
 -------------------------------------------------------------------(realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-registro-de-formulario-de-contacto)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3c2cc9cc
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@70894c75
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Realizar adicion de producto/realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-adicion-de-producto
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
@@ -259,11 +267,11 @@ TEST STARTED: Realizar registro de formulario de contacto
 
 TEST STARTED: Realizar adicion de producto
 -------------------------------------------------------------------(realizar-registro-de-datos-y-adicion-de-productos-en-demoblaze;realizar-adicion-de-producto)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@583f7de8
-[pool-2-thread-4] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3a146d07
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
-[pool-2-thread-2] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 [pool-2-thread-3] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+[pool-2-thread-4] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+[pool-2-thread-2] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 </pre>
 </span>
 </div>
@@ -275,7 +283,7 @@ TEST STARTED: Realizar adicion de producto
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at 23/11/2021, 12:20:08 a. m.</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at 23/11/2021, 1:49:57 p. m.</p>
 </div>
 </div>
 </body>
