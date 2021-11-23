@@ -1,0 +1,48 @@
+co/com/tata/demoblaze/userinterface/FormularioContactoPage.java
+ co.com.tata.demoblaze.userinterface.FormularioContactoPage
+co/com/tata/demoblaze/questions/VerificarRegistroDeUsuarioExitoso.java
+ co.com.tata.demoblaze.questions.VerificarRegistroDeUsuarioExitoso
+co/com/tata/demoblaze/tasks/IngresarAinicioDeSesion.java
+ co.com.tata.demoblaze.tasks.IngresarAinicioDeSesion
+co/com/tata/demoblaze/tasks/AdicionarProducto.java
+ co.com.tata.demoblaze.tasks.AdicionarProducto
+co/com/tata/demoblaze/tasks/IngresarAHome.java
+ co.com.tata.demoblaze.tasks.IngresarAHome
+co/com/tata/demoblaze/tasks/LlenarFormularioContacto.java
+ co.com.tata.demoblaze.tasks.LlenarFormularioContacto
+co/com/tata/demoblaze/tasks/RegistrarUsuario.java
+ co.com.tata.demoblaze.tasks.RegistrarUsuario
+co/com/tata/demoblaze/tasks/IngresarAlRegistroDeUsuario.java
+ co.com.tata.demoblaze.tasks.IngresarAlRegistroDeUsuario
+co/com/tata/demoblaze/interactions/SeleccionarLista.java
+ co.com.tata.demoblaze.interactions.SeleccionarLista
+co/com/tata/demoblaze/questions/VerificarAdicionDeProducto.java
+ co.com.tata.demoblaze.questions.VerificarAdicionDeProducto
+co/com/tata/demoblaze/userinterface/AdicionarProductoPage.java
+ co.com.tata.demoblaze.userinterface.AdicionarProductoPage
+co/com/tata/demoblaze/tasks/SeleccionarCategoria.java
+ co.com.tata.demoblaze.tasks.SeleccionarCategoria
+co/com/tata/demoblaze/util/Constantes.java
+ co.com.tata.demoblaze.util.Constantes
+co/com/tata/demoblaze/userinterface/HomePage.java
+ co.com.tata.demoblaze.userinterface.HomePage
+co/com/tata/demoblaze/questions/VerificarEnvioDeFormulario.java
+ co.com.tata.demoblaze.questions.VerificarEnvioDeFormulario
+co/com/tata/demoblaze/userinterface/RegistrarUsuarioPage.java
+ co.com.tata.demoblaze.userinterface.RegistrarUsuarioPage
+co/com/tata/demoblaze/tasks/IniciarSesion.java
+ co.com.tata.demoblaze.tasks.IniciarSesion
+co/com/tata/demoblaze/tasks/SeleccionarProducto.java
+ co.com.tata.demoblaze.tasks.SeleccionarProducto
+co/com/tata/demoblaze/tasks/AbrirNavegador.java
+ co.com.tata.demoblaze.tasks.AbrirNavegador
+co/com/tata/demoblaze/questions/VerificarInicioDeSesion.java
+ co.com.tata.demoblaze.questions.VerificarInicioDeSesion
+co/com/tata/demoblaze/exceptions/RegistroDeUsuarioIncorrecto.java
+ co.com.tata.demoblaze.exceptions.RegistroDeUsuarioIncorrecto
+co/com/tata/demoblaze/tasks/IngresarAcontacto.java
+ co.com.tata.demoblaze.tasks.IngresarAcontacto
+co/com/tata/demoblaze/model/DemoblazeData.java
+ co.com.tata.demoblaze.model.DemoblazeData
+co/com/tata/demoblaze/userinterface/IniciarSesionPage.java
+ co.com.tata.demoblaze.userinterface.IniciarSesionPage
